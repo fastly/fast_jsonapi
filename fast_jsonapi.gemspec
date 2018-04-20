@@ -1,6 +1,6 @@
 Gem::Specification.new do |gem|
   gem.name = "fast_jsonapi"
-  gem.version = "1.1.1"
+  gem.version = "1.1.2.pre1"
 
   gem.required_rubygems_version = Gem::Requirement.new(">= 0") if gem.respond_to? :required_rubygems_version=
   gem.metadata = { "allowed_push_host" => "https://rubygems.org" } if gem.respond_to? :metadata=
@@ -31,4 +31,6 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency(%q<sqlite3>, ["~> 1.3"])
   gem.add_development_dependency(%q<jsonapi-rb>, ["~> 0.5.0"])
   gem.add_development_dependency(%q<jsonapi-serializers>, ["~> 1.0.0"])
+  gem.add_development_dependency('rake', ['~> 10.0'])
+  gem.add_development_dependency('rake-geminabox_upload', ['~> 1.0'])
 end
